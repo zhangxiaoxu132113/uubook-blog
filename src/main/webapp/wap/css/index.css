@@ -1,0 +1,12 @@
+.b_top {
+    height: 32px;
+    background: #fff;
+    position: relative;
+    box-shadow: 2px 4px 7px #dcdcdc;
+}
+.b_top h2 {
+    text-align: left;
+    line-height: 32px;
+    font-size: 32px;
+    color: #333;
+}
