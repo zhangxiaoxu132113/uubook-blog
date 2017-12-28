@@ -197,3 +197,151 @@
 2017-12-27 12:33:22.678  INFO 7860 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2017-12-27 12:33:22.679  INFO 7860 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2017-12-27 12:33:22.724  INFO 7860 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+2017-12-27 14:39:33.087  INFO 16052 --- [main] com.water.uubook.blog.Application        : Starting Application on DESKTOP-4J6M98B with PID 16052 (D:\git_hourse\uubook\target\classes started by admin in D:\git_hourse\uubook)
+2017-12-27 14:39:33.093  INFO 16052 --- [main] com.water.uubook.blog.Application        : No active profile set, falling back to default profiles: default
+2017-12-27 14:39:33.247  INFO 16052 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a79c292: startup date [Wed Dec 27 14:39:33 CST 2017]; root of context hierarchy
+2017-12-27 14:39:37.234  INFO 16052 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+2017-12-27 14:39:37.256  INFO 16052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-27 14:39:37.259  INFO 16052 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-27 14:39:37.995  INFO 16052 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-12-27 14:39:38.003  INFO 16052 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-27 14:39:38.003  INFO 16052 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4761 ms
+2017-12-27 14:39:38.245  INFO 16052 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-27 14:39:38.250  INFO 16052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-27 14:39:38.251  INFO 16052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-27 14:39:38.252  INFO 16052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-27 14:39:38.252  INFO 16052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-27 14:39:38.784  INFO 16052 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a79c292: startup date [Wed Dec 27 14:39:33 CST 2017]; root of context hierarchy
+2017-12-27 14:39:38.931  INFO 16052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pc]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.pc.PcBlogController.index()
+2017-12-27 14:39:38.934  INFO 16052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pc/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.pc.PcBlogController.list() throws java.util.concurrent.ExecutionException
+2017-12-27 14:39:38.938  INFO 16052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wap/ || /wap/index || /wap/index.html],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.wap.WapBlogController.index()
+2017-12-27 14:39:38.939  INFO 16052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wap/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.wap.WapBlogController.list() throws java.util.concurrent.ExecutionException
+2017-12-27 14:39:38.945  INFO 16052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-27 14:39:38.964  INFO 16052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-27 14:39:39.036  INFO 16052 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-27 14:39:39.037  INFO 16052 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-27 14:39:39.126  INFO 16052 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-27 14:39:39.445  INFO 16052 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-27 14:39:39.575  INFO 16052 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+2017-12-27 14:39:39.583  INFO 16052 --- [main] com.water.uubook.blog.Application        : Started Application in 7.145 seconds (JVM running for 8.119)
+2017-12-27 14:39:59.664  INFO 16052 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-27 14:39:59.664  INFO 16052 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-27 14:39:59.696  INFO 16052 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2017-12-28 11:01:28.463  INFO 6748 --- [main] com.water.uubook.blog.Application        : Starting Application on DESKTOP-4J6M98B with PID 6748 (D:\git_hourse\uubook\target\classes started by admin in D:\git_hourse\uubook)
+2017-12-28 11:01:28.475  INFO 6748 --- [main] com.water.uubook.blog.Application        : No active profile set, falling back to default profiles: default
+2017-12-28 11:01:28.836  INFO 6748 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b0b186: startup date [Thu Dec 28 11:01:28 CST 2017]; root of context hierarchy
+2017-12-28 11:01:34.400  INFO 6748 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+2017-12-28 11:01:34.439  INFO 6748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-28 11:01:34.441  INFO 6748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-28 11:01:35.356  INFO 6748 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-12-28 11:01:35.371  INFO 6748 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-28 11:01:35.372  INFO 6748 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6542 ms
+2017-12-28 11:01:35.676  INFO 6748 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-28 11:01:35.681  INFO 6748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-28 11:01:35.682  INFO 6748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-28 11:01:35.682  INFO 6748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-28 11:01:35.683  INFO 6748 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-28 11:01:36.749  INFO 6748 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[119.23.71.245:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2017-12-28 11:01:36.751  INFO 6748 --- [main] org.mongodb.driver.cluster               : Adding discovered server 119.23.71.245:27017 to client view of cluster
+2017-12-28 11:01:37.129  INFO 6748 --- [cluster-ClusterId{value='5a445e90a7d96c1a5c6d10ac', description='null'}-119.23.71.245:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:6}] to 119.23.71.245:27017
+2017-12-28 11:01:37.146  INFO 6748 --- [cluster-ClusterId{value='5a445e90a7d96c1a5c6d10ac', description='null'}-119.23.71.245:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=119.23.71.245:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 4, 14]}, minWireVersion=0, maxWireVersion=0, maxDocumentSize=16777216, roundTripTimeNanos=14615995}
+2017-12-28 11:01:37.148  INFO 6748 --- [cluster-ClusterId{value='5a445e90a7d96c1a5c6d10ac', description='null'}-119.23.71.245:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2017-12-28 11:01:38.119  INFO 6748 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b0b186: startup date [Thu Dec 28 11:01:28 CST 2017]; root of context hierarchy
+2017-12-28 11:01:38.272  INFO 6748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pc]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.pc.PcBlogController.index()
+2017-12-28 11:01:38.273  INFO 6748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pc/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.pc.PcBlogController.list() throws java.util.concurrent.ExecutionException
+2017-12-28 11:01:38.276  INFO 6748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wap/ || /wap/index || /wap/index.html],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.wap.WapBlogController.index()
+2017-12-28 11:01:38.276  INFO 6748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wap/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.wap.WapBlogController.list() throws java.util.concurrent.ExecutionException
+2017-12-28 11:01:38.288  INFO 6748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-28 11:01:38.290  INFO 6748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-28 11:01:38.377  INFO 6748 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-28 11:01:38.377  INFO 6748 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-28 11:01:38.465  INFO 6748 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-28 11:01:38.867  INFO 6748 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-28 11:01:39.249  INFO 6748 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+2017-12-28 11:01:39.260  INFO 6748 --- [main] com.water.uubook.blog.Application        : Started Application in 13.234 seconds (JVM running for 15.446)
+2017-12-28 11:02:11.275  INFO 6748 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-28 11:02:11.275  INFO 6748 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-28 11:02:11.316  INFO 6748 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2017-12-28 11:02:11.601  INFO 6748 --- [http-nio-8082-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:7}] to 119.23.71.245:27017
+2017-12-28 11:08:52.042  INFO 12800 --- [main] com.water.uubook.blog.Application        : Starting Application on DESKTOP-4J6M98B with PID 12800 (D:\git_hourse\uubook\target\classes started by admin in D:\git_hourse\uubook)
+2017-12-28 11:08:52.048  INFO 12800 --- [main] com.water.uubook.blog.Application        : No active profile set, falling back to default profiles: default
+2017-12-28 11:08:52.170  INFO 12800 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b0b186: startup date [Thu Dec 28 11:08:52 CST 2017]; root of context hierarchy
+2017-12-28 11:08:55.590  INFO 12800 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+2017-12-28 11:08:55.613  INFO 12800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-28 11:08:55.616  INFO 12800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-28 11:08:56.157  INFO 12800 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-12-28 11:08:56.170  INFO 12800 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-28 11:08:56.171  INFO 12800 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4006 ms
+2017-12-28 11:08:56.388  INFO 12800 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-28 11:08:56.395  INFO 12800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-28 11:08:56.396  INFO 12800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-28 11:08:56.397  INFO 12800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-28 11:08:56.397  INFO 12800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-28 11:08:57.024  INFO 12800 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[119.23.71.245:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2017-12-28 11:08:57.025  INFO 12800 --- [main] org.mongodb.driver.cluster               : Adding discovered server 119.23.71.245:27017 to client view of cluster
+2017-12-28 11:08:57.258  INFO 12800 --- [cluster-ClusterId{value='5a446049a7d96c3200ded326', description='null'}-119.23.71.245:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server 119.23.71.245:27017
+
+com.mongodb.MongoSecurityException: Exception authenticating
+	at com.mongodb.connection.NativeAuthenticator.authenticate(NativeAuthenticator.java:48) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.DefaultAuthenticator.authenticate(DefaultAuthenticator.java:32) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.InternalStreamConnectionInitializer.authenticateAll(InternalStreamConnectionInitializer.java:109) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:46) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:116) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113) ~[mongodb-driver-core-3.4.3.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:na]
+Caused by: com.mongodb.MongoCommandException: Command failed with error 18: 'auth fails' on server 119.23.71.245:27017. The full response is { "code" : 18, "ok" : 0.0, "errmsg" : "auth fails" }
+	at com.mongodb.connection.CommandHelper.createCommandFailureException(CommandHelper.java:170) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.CommandHelper.receiveCommandResult(CommandHelper.java:123) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.CommandHelper.executeCommand(CommandHelper.java:32) ~[mongodb-driver-core-3.4.3.jar:na]
+	at com.mongodb.connection.NativeAuthenticator.authenticate(NativeAuthenticator.java:46) ~[mongodb-driver-core-3.4.3.jar:na]
+	... 6 common frames omitted
+
+2017-12-28 11:08:57.964  INFO 12800 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b0b186: startup date [Thu Dec 28 11:08:52 CST 2017]; root of context hierarchy
+2017-12-28 11:08:58.058  INFO 12800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pc]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.pc.PcBlogController.index()
+2017-12-28 11:08:58.060  INFO 12800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pc/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.pc.PcBlogController.list() throws java.util.concurrent.ExecutionException
+2017-12-28 11:08:58.066  INFO 12800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wap/ || /wap/index || /wap/index.html],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.wap.WapBlogController.index()
+2017-12-28 11:08:58.067  INFO 12800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wap/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.wap.WapBlogController.list() throws java.util.concurrent.ExecutionException
+2017-12-28 11:08:58.072  INFO 12800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-28 11:08:58.073  INFO 12800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-28 11:08:58.129  INFO 12800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-28 11:08:58.129  INFO 12800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-28 11:08:58.231  INFO 12800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-28 11:08:58.531  INFO 12800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-28 11:08:58.933  INFO 12800 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+2017-12-28 11:08:58.941  INFO 12800 --- [main] com.water.uubook.blog.Application        : Started Application in 7.558 seconds (JVM running for 8.315)
+2017-12-28 11:11:13.346  INFO 17960 --- [main] com.water.uubook.blog.Application        : Starting Application on DESKTOP-4J6M98B with PID 17960 (D:\git_hourse\uubook\target\classes started by admin in D:\git_hourse\uubook)
+2017-12-28 11:11:13.351  INFO 17960 --- [main] com.water.uubook.blog.Application        : No active profile set, falling back to default profiles: default
+2017-12-28 11:11:13.465  INFO 17960 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b0b186: startup date [Thu Dec 28 11:11:13 CST 2017]; root of context hierarchy
+2017-12-28 11:11:17.344  INFO 17960 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+2017-12-28 11:11:17.367  INFO 17960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-28 11:11:17.369  INFO 17960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-28 11:11:17.933  INFO 17960 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-12-28 11:11:17.943  INFO 17960 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-28 11:11:17.943  INFO 17960 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4484 ms
+2017-12-28 11:11:18.196  INFO 17960 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-28 11:11:18.202  INFO 17960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-28 11:11:18.202  INFO 17960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-28 11:11:18.203  INFO 17960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-28 11:11:18.203  INFO 17960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-28 11:11:18.843  INFO 17960 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[119.23.71.245:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2017-12-28 11:11:18.844  INFO 17960 --- [main] org.mongodb.driver.cluster               : Adding discovered server 119.23.71.245:27017 to client view of cluster
+2017-12-28 11:11:19.005  INFO 17960 --- [cluster-ClusterId{value='5a4460d6a7d96c46283d1144', description='null'}-119.23.71.245:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:29}] to 119.23.71.245:27017
+2017-12-28 11:11:19.017  INFO 17960 --- [cluster-ClusterId{value='5a4460d6a7d96c46283d1144', description='null'}-119.23.71.245:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=119.23.71.245:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 4, 14]}, minWireVersion=0, maxWireVersion=0, maxDocumentSize=16777216, roundTripTimeNanos=9661701}
+2017-12-28 11:11:19.019  INFO 17960 --- [cluster-ClusterId{value='5a4460d6a7d96c46283d1144', description='null'}-119.23.71.245:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2017-12-28 11:11:19.733  INFO 17960 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b0b186: startup date [Thu Dec 28 11:11:13 CST 2017]; root of context hierarchy
+2017-12-28 11:11:19.845  INFO 17960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pc]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.pc.PcBlogController.index()
+2017-12-28 11:11:19.847  INFO 17960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pc/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.pc.PcBlogController.list() throws java.util.concurrent.ExecutionException
+2017-12-28 11:11:19.849  INFO 17960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wap/ || /wap/index || /wap/index.html],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.wap.WapBlogController.index()
+2017-12-28 11:11:19.850  INFO 17960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wap/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.water.uubook.blog.controller.wap.WapBlogController.list() throws java.util.concurrent.ExecutionException
+2017-12-28 11:11:19.854  INFO 17960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-28 11:11:19.855  INFO 17960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-28 11:11:19.907  INFO 17960 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-28 11:11:19.907  INFO 17960 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-28 11:11:19.978  INFO 17960 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-28 11:11:20.275  INFO 17960 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-28 11:11:20.568  INFO 17960 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+2017-12-28 11:11:20.592  INFO 17960 --- [main] com.water.uubook.blog.Application        : Started Application in 7.898 seconds (JVM running for 8.832)
+2017-12-28 11:11:25.530  INFO 17960 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-28 11:11:25.530  INFO 17960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-28 11:11:25.578  INFO 17960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2017-12-28 11:11:25.808  INFO 17960 --- [http-nio-8082-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:30}] to 119.23.71.245:27017
