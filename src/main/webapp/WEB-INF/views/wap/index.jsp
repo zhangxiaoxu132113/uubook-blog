@@ -15,8 +15,8 @@
           content="编程无忧网_IT博文分享平台，包含系统运维,云计算,大数据分析,Web开发入门,PHP教程,Python入门,Java,数据库文章,网络安全文章,人工智能,移动开发技术,服务器,考试认证等"/>
     <meta name="viewport" content="width=640"/>
     <link rel="stylesheet" href="<%=basePath%>/commons/iconfont/iconfont.css">
-    <link rel="stylesheet" href="<%=basePath%>/wap/css/common.css">
-    <link rel="stylesheet" href="<%=basePath%>/wap/css/index.css">
+    <link rel="stylesheet" href="<%=basePath%>/asset/wap/css/common.css">
+    <link rel="stylesheet" href="<%=basePath%>/asset/wap/css/index.css">
 </head>
 <body>
 <div class="container">

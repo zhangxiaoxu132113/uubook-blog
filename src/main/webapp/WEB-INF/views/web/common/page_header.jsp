@@ -44,7 +44,7 @@
 
 <script src="<%=path%>${urlHelper.pcDebug()}/js/page-common.js"></script>
 <script type="text/javascript" src="http://my.39.net/js/Passport.js"></script>
-<script type="text/javascript" src="http://ask.39.net/js/39ask/template.js?v=20140924"></script>
+<script type="text/javascript" src="http://ask.39.net/js/39ask/templates.js?v=20140924"></script>
 <script type="text/javascript" src="http://image.39.net/ask2016/js/autosize.min.js"></script>
 <script src="http://image.39.net/pass/js/passCommon.js" type="text/javascript"></script>
 <script src='http://my.39.net/js/myMesg.js' type='text/javascript'></script>

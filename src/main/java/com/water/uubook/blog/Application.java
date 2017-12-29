@@ -10,14 +10,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan(basePackages = "com.water.uubook.blog")
-public class Application implements EmbeddedServletContainerCustomizer {
+public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
-	}
-
-	@Override
-	public void customize(ConfigurableEmbeddedServletContainer configurableEmbeddedServletContainer) {
-		configurableEmbeddedServletContainer.setPort(8082);
 	}
 }
