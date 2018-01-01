@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+    <title>编程无忧网_让编程更加无忧的IT技术网站</title>
+    <meta name="description"
+          content="编程无忧网(www.uubook.net)提供了优质的编程技术博文，编程实例教程，软件最新资讯，涵盖编程语言，移动开发，前端开发，数据库，服务器，云计算等各个领域，更多的优质资源尽在编程无忧网">
+    <meta name="keywords" content="编程学习,IT技术,软件开发,技术博客,编程教程,软件资讯,软件学习,java架构师教程">
+    <link rel="stylesheet" type="text/css" href="${base}/asset/wap/css/common.css">
+    <link rel="stylesheet" type="text/css" href="${base}/asset/wap/css/index.css">
+    <link rel="stylesheet" type="text/css" href="${base}/asset/wap/css/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="${base}/plugs/slider/slider.css">
+    <link rel="stylesheet" type="text/css" href="${base}/asset/wap/css/slider_menu.css">
+</head>
+<body>
+
+<div class="menu">
+    <img id="menu-bg" src="${base}/asset/wap/content/golden-gate-lights.jpg"/>
+    <ul>
+        <li><a href="">首页</a></li>
+        <li><a href="">文档库</a></li>
+        <li><a href="">教程</a></li>
+        <li><a href="">知识库</a></li>
+        <li><a href="">经验</a></li>
+    </ul>
+</div>
+
+<div class="screen">
+    <div class="search_panel">
+        <div class="search_panel_inner">
+            <form action="">
+                <span><input type="text"></span>
+            </form>
+        </div>
+    </div>
+    <div class="blog_header">
+        <span class="person-nav"><i class="iconfont">&#xe790;</i></span>
+        <h2 class="blog_top_t">uubook博客</h2>
+        <span class="search-btn"><i class="iconfont">&#xe693;</i></span>
+    </div>
+    <div class="caurous">
+        <section class="sample slider--animated" data-slidizle data-slidizle-timeout="4000"
+                 data-slidizle-loop="true" data-slidizle-pause-on-hover="true">
+            <ul class="slider-content" data-slidizle-content>
+                <li class="slider-item"
+                    style="width: 100%; height: 140px; background-image:url('/asset/wap/content/ph1516-p00058.jpg')"></li>
+                <li class="slider-item"
+                    style="width: 100%; height: 140px; background-image:url('/asset/wap/content/pm0216-6821fw.jpg')"></li>
+                <li class="slider-item"
+                    style="width: 100%; height: 140px; background-image:url('/asset/wap/content/029661510725247.png')"></li>
+            </ul>
+            <ul class="slider-navigation" data-slidizle-navigation></ul>
+        </section>
+    </div>
+    <div class="category">
+        <ul class="clearfix">
+            <li>
+                <a href="">
+                    <img width="35px" height="35px"
+                         src="http://csdnimg.cn/feed/20171212/f20bc5bb44435820f009185ed5b9d1b6.jpg" alt="">
+                    <span>开发语言</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img width="35px" height="35px"
+                         src="http://csdnimg.cn/feed/20171213/6f97e6730109077018bbebf5f698f31d.jpg" alt="">
+                    <span>前端开发</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img width="35px" height="35px"
+                         src="http://img.uubook.net/upload/cover/category/46df19c3-65d6-4595-8da7-231404666108.jpg"
+                         alt="">
+                    <span>服务器</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img width="35px" height="35px" src="http://avatar.csdn.net/B/A/8/1_baihuaxiu123.jpg" alt="">
+                    <span>移动开发</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img width="35px" height="35px" src="http://avatar.csdn.net/B/A/8/1_baihuaxiu123.jpg" alt="">
+                    <span>移动开发</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img width="35px" height="35px" src="http://avatar.csdn.net/B/A/8/1_baihuaxiu123.jpg" alt="">
+                    <span>移动开发</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img width="35px" height="35px" src="http://avatar.csdn.net/B/A/8/1_baihuaxiu123.jpg" alt="">
+                    <span>移动开发</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img width="35px" height="35px" src="http://avatar.csdn.net/B/A/8/1_baihuaxiu123.jpg" alt="">
+                    <span>移动开发</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="blog_main">
+        <div id="t_list_container">
+            <#list articleList as article>
+                <a href="${base}/wap/article/detail/${article.id?c}.html">
+                    <dl class="t_list">
+                        <dt><h3>${article.title}</h3></dt>
+                        <dd>
+                            <p class="description">
+                                ${article.description?substring(0,109)}
+                            </p>
+                            <span class="detail">阅读量：${article.viewHits} &nbsp;&nbsp; 点赞：34</span>
+                        <span class="tags">
+                            <#if article.tags??>
+                                <#list article.tags as tag>
+                                    <i>${tag}</i>
+                                    <#if tag_index==1>
+                                        <#break/>
+                                    </#if>
+                                </#list>
+                            </#if>
+                        </span>
+                        </dd>
+                    </dl>
+                </a>
+            </#list>
+        </div>
+    </div>
+    <div class="blog_footer">
+        <p>
+            编程无忧 © 2017 uubook.net<br>
+            粤ICP备17130657号
+        </p>
+    </div>
+</div>
+
+<script src="${base}/asset/wap/js/jquery-2.1.1.min.js"></script>
+<script src="${base}/asset/wap/js/stopExecutionOnTimeout.js"></script>
+<script src="${base}/plugs/slider/jquery.slidizle.js"></script>
+<script>
+    jQuery(function ($) {
+        $('[data-slidizle]').slidizle({
+            beforeChange: function (api) {
+            }
+        });
+
+        $("ul.tabClick li").hover(function () {
+            $(this).addClass("active").siblings().removeClass("active"); //切换选中的按钮高亮状态
+            var index = $(this).index(); //获取被按下按钮的索引值，需要注意index是从0开始的
+            $('.lineDiv').css('margin-left', (index * 140) + 'px');
+            $(".tabBox > div").eq(index).show().siblings().hide(); //在按钮选中时在下面显示相应的内容，同时隐藏不需要的框架内容
+        });
+
+        $(window).scroll(function () {
+            var height = $('#header').height() + $('#category-nav').height() + $('#view-info').height() + $('#long-ad').height() + 30;
+            if ($(window).scrollTop() >= height) {
+                $('.tabClick').addClass('nav-fixed');
+            } else {
+                $('.tabClick').removeClass("nav-fixed");
+            }
+        });
+    });
+</script>
+<script>
+    if ('ontouchstart' in window) {
+        var click = 'touchstart';
+    } else {
+        var click = 'click';
+    }
+    $('span.person-nav').on(click, function () {
+        if (!$(this).hasClass('open')) {
+            openMenu();
+        } else {
+            closeMenu();
+        }
+    });
+    $('span.search-btn').on(click, function () {
+        if (!$('.search_panel').hasClass('search_panel_animails')) {
+            $('.search_panel').addClass('search_panel_animails');
+        } else {
+            $('.search_panel').removeClass('search_panel_animails');
+        }
+    });
+    $('div.menu ul li a').on(click, function (e) {
+        e.preventDefault();
+        closeMenu();
+    });
+    function openMenu() {
+        $('span.person-nav').addClass('open');
+        $('div.screen').addClass('animate');
+        setTimeout(function () {
+            $('div.x').addClass('rotate30');
+            $('div.z').addClass('rotate150');
+            $('.menu').addClass('animate');
+            setTimeout(function () {
+                $('div.x').addClass('rotate45');
+                $('div.z').addClass('rotate135');
+            }, 100);
+        }, 10);
+
+        //禁止屏幕滚动
+        $("body,html").css({"overflow": "hidden"});
+    }
+    function closeMenu() {
+        $('div.screen, .menu').removeClass('animate');
+        $('span.person-nav').removeClass('open');
+        $("body,html").css({"overflow": "auto"});
+    }
+</script>
+
+</body>
+</html>

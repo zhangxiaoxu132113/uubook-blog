@@ -1,0 +1,132 @@
+.back_btn {
+    position: absolute;
+    left: 1em;
+    height: 46px;
+    line-height: 46px;
+}
+
+.back_btn i.iconfont {
+    font-size: 24px;
+    color: #2095e0;
+}
+
+.blog_body {
+    margin-top: 56px;
+}
+
+.blog_body .t_header {
+    background: #fff;
+    margin-bottom: 0.5em;
+    padding: 1em;
+}
+
+.blog_body .t_header .t_header_inner h2 {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 0.5em;
+    line-height: 1.5em;
+    font-weight: 400;
+    word-break: break-all;
+
+}
+
+.blog_body .content {
+    padding: 1.2em;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.blog_body .content a {
+    color: #2096e0;
+    text-decoration: none;
+}
+
+.blog_body .content p {
+    margin-bottom: 1em;
+}
+
+.t_count, .tags {
+    font-size: 12px;
+    color: #7e7e7e;
+    font-weight: 100;
+}
+
+.tags span {
+    color: green;
+}
+
+.t_count span, .tags span {
+    margin-right: 1em;
+}
+
+.article-command .article-command-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 0.5em;
+}
+
+.article-command-list {
+    background: #fff;
+
+}
+
+.article-command-list .article-command-item {
+    border-bottom: solid 0.05rem #ddd;
+    padding: 1em;
+}
+
+.content-inner {
+    background: #fff;
+    margin-bottom: 1em;
+}
+
+.article-command-item dd {
+    font-size: 12px;
+    padding: 0.5em 0 0;
+    color: #666;
+}
+
+.article-command-list a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.dianzan {
+    text-align: center;
+    padding: 0 0 1em;
+}
+
+.dianzan .iconfont {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: orange;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.more-command-btn{
+    padding: 1em;
+    text-align: center;
+    background: #fff;
+}
+
+.more-command-btn a{
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #42a5e5;
+    margin: 0 auto;
+    color: #42a5e5;
+}
+

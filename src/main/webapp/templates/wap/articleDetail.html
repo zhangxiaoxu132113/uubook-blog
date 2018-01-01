@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+    <title>编程无忧网_让编程更加无忧的IT技术网站</title>
+    <meta name="description"
+          content="编程无忧网(www.uubook.net)提供了优质的编程技术博文，编程实例教程，软件最新资讯，涵盖编程语言，移动开发，前端开发，数据库，服务器，云计算等各个领域，更多的优质资源尽在编程无忧网">
+    <meta name="keywords" content="编程学习,IT技术,软件开发,技术博客,编程教程,软件资讯,软件学习,java架构师教程">
+    <link rel="stylesheet" type="text/css" href="${base}/asset/wap/css/common.css">
+    <link rel="stylesheet" type="text/css" href="${base}/asset/wap/css/articleDetail.css">
+    <link rel="stylesheet" type="text/css" href="${base}/plugs/slider/slider.css">
+    <link rel="stylesheet" type="text/css" href="${base}/asset/wap/css/iconfont/iconfont.css">
+</head>
+<body>
+<div class="search_panel">
+    <div class="search_panel_inner">
+        <form action="">
+            <span><input type="text"></span>
+        </form>
+    </div>
+</div>
+<div class="blog_header">
+    <span class="back_btn" onclick="javascript:history.back(-1);"><i class="iconfont">&#xe779;</i></span>
+    <h2 class="blog_top_t">${article.categoryStr}</h2>
+    <span class="search-btn"><i class="iconfont">&#xe693;</i></span>
+</div>
+<div class="blog_body">
+    <div class="t_header">
+        <div class="t_header_inner">
+            <h2>${article.title}</h2>
+            <div class="t_count"><span class="">阅读量：<i>${article.viewHits}</i></span> <span>点赞：<i>34</i></span></div>
+            <div class="tags">标签：
+                 <#if article.tags??>
+                     <#list article.tags as tag>
+                         <span>${tag}</span>
+                         <#if tag_index==1>
+                             <#break/>
+                         </#if>
+                     </#list>
+                 </#if>
+            </div>
+        </div>
+    </div>
+    <div class="content-inner">
+        <div class="content">${article.content}</div>
+        <div class="dianzan"><i class="iconfont">&#xe794;</i></div>
+    </div>
+
+    <div class="article-command">
+        <h2 class="article-command-title">相关文章推荐</h2>
+        <div class="article-command-list">
+            <#list article.relativeArticleDocument as articleDocument>
+                <div class="article-command-item">
+                    <dl>
+                        <dt><a href="${base}/wap/article/detail/${articleDocument.id}.html">${articleDocument.title}</a></dt>
+                        <dd>
+                            <span>阅读量：${articleDocument.viewHits}</span>
+                        </dd>
+                    </dl>
+                </div>
+            </#list>
+        </div>
+        <div class="more-command-btn">
+            <a>加载更多</a>
+        </div>
+    </div>
+</div>
+
+<div class="blog_footer">
+    <p>
+        编程无忧 © 2017 uubook.net<br>
+        粤ICP备17130657号
+    </p>
+</div>
+<script src="${base}/asset/wap/js/jquery-2.1.1.min.js"></script>
+<script>
+    $('span.search-btn').on('click', function () {
+        if (!$('.search_panel').hasClass('search_panel_animails')) {
+            $('.search_panel').addClass('search_panel_animails');
+        } else {
+            $('.search_panel').removeClass('search_panel_animails');
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,12 +1,127 @@
-.b_top {
-    height: 32px;
-    background: #fff;
-    position: relative;
-    box-shadow: 2px 4px 7px #dcdcdc;
+.caurous {
+    margin-top: 56px;
 }
-.b_top h2 {
-    text-align: left;
-    line-height: 32px;
-    font-size: 32px;
+
+.article-list {
+    width: 100%;
+    background: #fff;
+    border-style: solid;
+    border-width: 0.025rem;
+    border-color: #dcdcdc;
+    border-left: none;
+    border-right: none;
+    padding: 0.5rem 0.5rem 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.article-list dt {
+    border-bottom: solid 0.05rem #dcdcdc;
+    padding-bottom: 0.5rem;
+}
+
+.article-list dt a {
+    display: block;
+    font-size: 14px;
     color: #333;
+    font-weight: normal;
+    word-wrap: break-word;
+}
+
+.person-nav {
+    position: absolute;
+    left: 1em;
+    height: 46px;
+    line-height: 46px;
+}
+
+.search-btn {
+    position: absolute;
+    right: 1em;
+    top: 0;
+    height: 46px;
+    line-height: 46px;
+}
+
+.person-nav i.iconfont, .search-btn i.iconfont {
+    font-size: 24px;
+    color: #2095e0;
+}
+
+.category {
+    background: #fff;
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+}
+
+.category li {
+    float: left;
+    margin-left: 3em;
+}
+
+.category li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.category ul {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.category li a img {
+    border: none;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.category li a span {
+    display: block;
+    text-align: center;
+    width: 50px;
+}
+
+.t_list {
+    padding: 1em 0;
+    border-top: 1px solid #9491912b;
+    border-bottom: 1px solid #9491912b;
+    margin-bottom: 1em;
+    background: #fff;
+}
+
+.t_list dt a {
+    text-decoration: none;
+}
+
+.t_list dt h3{
+    font-size: 16px;
+    padding: 0 1em 0.5em;
+    color: #333;
+    font-weight: 500;
+}
+
+.t_list dd p.description {
+    padding: 0 1em 0.5em;
+    font-size: 14px;
+    color: #666;
+}
+
+.t_list dd span.detail {
+    padding: 0 1em;
+    font-size: 12px;
+    color: #666;
+}
+
+.t_list dd span.tags {
+    float: right;
+    margin-right: 2em;
+}
+.t_list dd span.tags i {
+    margin-left: 1em;
+    background: #ccc;
+    color: #fff;
+    padding: 1px 7px;
+    border-radius: 4px;
 }
