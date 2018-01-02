@@ -12,11 +12,12 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 
 /**
- * Created by mrwater on 2017/12/31.
+ * Created by zhangmiaojie on 2017/12/31.
  */
 public class CreateHtmlUtils {
 
     private final static String STATIS_HTML = "/Users/mrwater/Documents/tumblr";
+//    private final static String STATIS_HTML = "/data/static/html";
 
     private final static Log log = LogFactory.getLog(CreateHtmlUtils.class);
 

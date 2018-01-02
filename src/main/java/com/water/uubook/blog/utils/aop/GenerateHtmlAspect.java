@@ -1,22 +1,16 @@
 package com.water.uubook.blog.utils.aop;
 
-import com.water.uubook.blog.annotation.GenerateHtml;
 import com.water.uubook.blog.mq.CreateHtmlMessage;
 import com.water.uubook.blog.mq.MessageThreadService;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.Signature;
-import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
-import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 import org.springframework.ui.Model;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Method;
 
 /**
  * 切面：实现访问请求，生成静态文件
@@ -30,7 +24,6 @@ public class GenerateHtmlAspect {
     @Resource
     private MessageThreadService messageThreadService;
 
-    // 这里是关键点，把切面的连接点放在了我们的注解上
     @Pointcut("@annotation(com.water.uubook.blog.annotation.GenerateHtml)")
     public void controllerAspect() {
     }
@@ -40,16 +33,6 @@ public class GenerateHtmlAspect {
      */
     @AfterReturning(pointcut = "controllerAspect()", returning = "returnValue")
     public void applause(JoinPoint point, String returnValue) {
-//        MethodSignature methodSignature = (MethodSignature) point.getSignature();
-//        Method targetMethod = methodSignature.getMethod();
-//        Annotation[] methodAnnotations = targetMethod.getAnnotations();
-//        for (Annotation annotation : methodAnnotations) {
-//            if (annotation instanceof GenerateHtml) {
-//                GenerateHtml generateHtml = (GenerateHtml) annotation;
-//                String requestPath = generateHtml.requestPath();
-//            }
-//        }
-
         Model model = null;
         String requestPath = null;
         HttpServletRequest request = null;
@@ -65,15 +48,16 @@ public class GenerateHtmlAspect {
             throw new RuntimeException("request对象为空，获取不到请求的路径");
         }
         requestPath = request.getRequestURI();
-        messageThreadService.sendCreateHtmlMessage(new CreateHtmlMessage(this.getTemplatesPath(),
+        messageThreadService.sendCreateHtmlMessage(new CreateHtmlMessage(this.getTemplatesPath(request),
                 returnValue, requestPath, model));
     }
 
-    public String getTemplatesPath() {
+    public String getTemplatesPath(HttpServletRequest request) {
         if (templatesPath == null) {
             synchronized (this) {
                 if (templatesPath == null) {
-                    templatesPath = this.getClass().getResource("/templates").getPath();
+//                    templatesPath = "/Users/mrwater/Documents/git_house/uubook-blog/src/main/webapp/templates";
+                    templatesPath = "/data/templates/";
                 }
             }
         }
@@ -83,5 +67,4 @@ public class GenerateHtmlAspect {
     public void setTemplatesPath(String templatesPath) {
         this.templatesPath = templatesPath;
     }
-
 }

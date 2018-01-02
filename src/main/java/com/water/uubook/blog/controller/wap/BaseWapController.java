@@ -22,7 +22,7 @@ public class BaseWapController {
         if (templatesPath == null) {
             synchronized (this) {
                 if (templatesPath == null) {
-                    templatesPath = this.getClass().getResource("/templates").getPath();
+                    templatesPath = this.getClass().getResource("/WEB-INF/views/templates").getPath();
                 }
             }
         }
