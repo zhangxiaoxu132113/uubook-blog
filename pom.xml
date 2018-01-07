@@ -123,14 +123,14 @@
                     <include>**/*.json</include>
                 </includes>
             </resource>
-            <resource>
-                <directory>src/main/webapp</directory>
-                <!--注意此次必须要放在此目录下才能被访问到-->
+            <!--<resource>-->
+                <!--<directory>src/main/webapp</directory>-->
+                <!--&lt;!&ndash;注意此次必须要放在此目录下才能被访问到&ndash;&gt;-->
                 <!--<targetPath>META-INF/resources</targetPath>-->
-                <includes>
-                    <include>**/**</include>
-                </includes>
-            </resource>
+                <!--<includes>-->
+                    <!--<include>**/**</include>-->
+                <!--</includes>-->
+            <!--</resource>-->
         </resources>
         <plugins>
             <plugin>
